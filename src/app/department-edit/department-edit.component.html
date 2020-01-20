@@ -1,0 +1,10 @@
+<div class="container">
+    <label for="id"></label>
+    <input type="text" id="id" name="userid" value={{id}}>
+
+</div>
+<div class="container">
+    <div class="col-sm-12">
+        <a [routerLink]="['/dept',10,'edit']" [queryParams]="{allowEdit:1,allow:2}">Click me for Edit</a>
+    </div>
+</div>

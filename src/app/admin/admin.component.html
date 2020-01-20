@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <p>{{admincontent}}</p>
+        <h1>THis is admin component</h1>
+
+        <label for="ref">Enter Refrence Variable</label>
+        <input type="text" name="refexample" id="ref" class="form-control" #refsample value={{nametwo}}>
+
+        <p *ngFor="let abc of adminname">
+            {{abc.name}} {{abc.age}}
+        </p>
+        <label for="viewchild">Enter ViewChild Data</label>
+        <input type="text" name="amount" #inputvalue id="viewchild">
+        <button class="btn btn-primary" (click)="AddItem()">AddItem</button>
+        <button class="btn btn-primary" (click)="DeleteItem()">DeleteItem</button>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<p>cockpit works!</p>
+<div class="row">
+    <div class="col-sm-12">
+        <label for="test">Enter the childevent</label>
+        <input type="text" name="test" id="test" class="form-control" [(ngModel)]="test">
+        <!--template refernce variable example-->
+        <input type="text" name="test" id="test" class="form-control" #savetemplate>
+        <button (click)="templateData(savetemplate)">SaveTemplate Data</button>
+        <button (click)="sendData()">Click me</button>
+        <hr>
+        <hr>
+        <!--this is oneway from html to ts file using event binding-->
+        <h1>this is for just one way for event binding</h1>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" class="form-control" (input)="datafromtext($event)">
+        <hr>
+        <!--Viewchild oneway binding-->
+
+        <label for="email1">viewdata</label>
+        <input type="text" name="email1" id="email1" #serverviewchild class="form-control">
+        <!---->
+        <hr>
+        <label id="fullname">Enter userName</label>
+        <input type="text" name="fullname" id="fullname" class="form-control" value={{fullname}}>
+        <h1 *ngFor="let parentData of parentDataname">
+            {{parentData.name}} {{parentData.age}}
+        </h1>
+
+    </div>
+
+</div>

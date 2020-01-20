@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <!-- <label>Enter UserName</label>
+    <input type="text" name="userName" [(ngModel)]="userName">
+    <p>{{userName}}</p>
+    <button type="submit" class="btn btn-success" [disabled]="userName===''" (click)="getUserName()">Save</button>
+    <button type="submit" class={{classestoApply}}>Cancel</button>
+
+    <button type="submit" style="color: red" [style.font-weight]="isBold? 
+    'bold':'normal'">Save ngStle</button>-->
+    <button class="btn btn-primary" (click)="ToggleMethod()">Display Details</button>
+
+    <p *ngIf="callpassword">Secretpassword is tuna</p>
+    <div *ngFor="let count of selectclicks" [ngStyle]="{backgroundColor:count>=5?'blue':'green'}">{{count}}</div>
+
+</body>
+
+</html>

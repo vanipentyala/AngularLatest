@@ -1,0 +1,13 @@
+<p>department-component works!</p>
+<div class="container">
+    <button class="btn btn-primary" (click)="onEmployee()">Employee Page</button>
+    <a routerLink="/dept">PageReload</a>
+    <div class="row">
+        <ul>
+            <li (click)="onSelect(data)" [class.selected]="isSelected(data)" *ngFor="let data of departmentslist">
+                <span class="badge">{{data.id}}</span> {{data.name}}
+            </li>
+        </ul>
+
+    </div>
+</div>

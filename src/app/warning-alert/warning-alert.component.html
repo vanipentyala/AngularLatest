@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <p>warning-alert works!</p>
+    <button class="btn-warning" (click)="warningMessage()" [disabled]="!warningmes">THis is Warning Message</button>
+    <h1>sample test for hari</h1>
+    <input type="text" class="form-control" (input)="getUpdateData($event)">
+
+    <h2>This data from Ts file</h2>
+    <input type="text" class="form-control" [(ngModel)]="eventinputdata">
+    <button type="submit" class="btn btn-success" (click)="SaveUserData()">Save Updated Values</button> {{eventinputdata}}
+</body>
+
+</html>
